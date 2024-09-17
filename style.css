@@ -51,16 +51,18 @@ h1 {
     margin-left: 30px;
     display: grid;
     gap: 4px;
-    grid-template-columns: repeat(auto-fit, 135px);
+    grid-template-columns: repeat(auto-fit, minmax(135px, auto));
     padding: 6px 0;
 }
 
 .nav-item {
     background-color: #4092de;
-
     line-height: 35px;
     margin: 0 10px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 19px;
